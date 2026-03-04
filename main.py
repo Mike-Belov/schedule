@@ -67,7 +67,7 @@ async def main():
         elif message.text == "Информация":
              bot.send_message(message.chat.id, "Вся информация берется с сайта " + 
                               f"https://gimn3-53.gosuslugi.ru. Телеграмм  bot с открытым исходным кодом. Ссылка на GitHub " + 
-                              f"https://github.com/Mike-Belov/WeatherBotTg. По всем вопросам @MikeBelovv", reply_markup=markup)  
+                              f"https://github.com/Mike-Belov/schedule. По всем вопросам @MikeBelovv", reply_markup=markup)  
         else:
             bot.send_message(message.chat.id, "Бот не понял вас попробуйте еще раз")
 
@@ -78,4 +78,5 @@ async def main():
             print(e)  
 
 if __name__ == "__main__":
+
     asyncio.run(main())
